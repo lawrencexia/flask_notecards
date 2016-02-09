@@ -1,0 +1,15 @@
+<html>
+	<head>
+		{% if title %}
+			<title>{{ title }} - note card site</title>
+		{% else %}
+			<title>Welcome to the note card site bro</title>
+		{% endif %}
+	</head>
+	<body>
+		<div><a href="/index">Home</a></div>
+		<div><a href="/notes">Notes</a></div>
+		<hr>
+		{% block content %}{% endblock %}
+	</body>
+</html>
