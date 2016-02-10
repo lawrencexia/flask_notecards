@@ -44,6 +44,7 @@ The `views` module is imported at the bottom to avoid circular dependencies
 ## Let's hello world something
 
 Let's define some web end points, aka routes. Create the `app/views.py`, where we will put our controller/routing logic. Here, we make the necessary imports and return 'Hello World' when the user hits the '/' endpoint:
+    from app import app
 
     @app.route('/')
     def index():
